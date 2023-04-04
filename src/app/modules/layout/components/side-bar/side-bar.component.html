@@ -1,0 +1,36 @@
+<div class="flex flex-col justify-center items-center max-h-48 m-auto" style="max-width: 192px;">
+
+  <img src="assets/foto.png" alt="Descripción de la imagen"
+    class="w-full h-full object-contain object-center overflow-hidden rounded-full  ">
+</div>
+<div class="flex justify-center items-center py-2 mx-auto md:mx-4">
+  <span class="text-center font-bold text-xl text-blue-700 leading-none">Cristian Danilo Motta Herrera</span>
+</div>
+
+<ng-container *ngTemplateOutlet="title;context:{title:'Contacto'}"></ng-container>
+
+<div class="flex justify-center items-start flex-col mx-0 md:mx-4 ">
+  <a *ngFor="let icon of contactIcons" [href]="icon.link" class="flex items-center text-gray-600 hover:text-gray-900">
+    <div class="mr-2 ">
+      <fa-icon [icon]="icon.icon" class=" transition-colors duration-200 ease-in-out text-2xl "></fa-icon>
+    </div>
+    <span class="text-xs">{{icon.text}}</span>
+  </a>
+</div>
+
+<ng-container *ngTemplateOutlet="title;context:{title:'Perfil'}"></ng-container>
+
+<span class="text-xs text-gray-600">
+  Ingeniero Electrónico con habilidades en programación y desarrollo web, destacando conocimientos en HTML, CSS,
+  JavaScript, Bootstrap, Angular, NodeJS, Blockchain y MongoDB. Además, poseo una gran capacidad de
+  aprendizaje y adaptación, lo cual me permite trabajar en equipo de manera eficiente y liderar proyectos con un
+  pensamiento lógico matemático y una actitud responsable y dedicada.
+</span>
+
+<ng-template #title let-title="title">
+  <div class="relative  text-start">
+    <h1 class="relative text-xl font-bold inline-block pb-2 pr-3 bg-gray-100 z-10 text-gray-600">{{title}}</h1>
+    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gray-200 top-1/2 z-0"></div>
+  </div>
+
+</ng-template>
