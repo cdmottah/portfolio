@@ -1,0 +1,28 @@
+.nav-bar {
+  --_space: 0.8em;
+  background-color: #2f2f2f;
+  box-sizing: border-box;
+
+  position: fixed;
+  width: 100dvw;
+  padding: 1em;
+}
+
+.nav-bar__container {
+  display: flex;
+  justify-content: end;
+  gap: var(--_space);
+  font-size: var(--step-0);
+}
+
+.nav-bar__item {
+  color: var(--color-text-base);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    color: var(--color-text-emphasis);
+  }
+}
+.nav-bar__item--active {
+  color: var(--color-text-emphasis);
+}

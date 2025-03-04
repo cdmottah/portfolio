@@ -1,4 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --background-color: #171717;
+  --color-text-base: #c1c1c1; // Color base para texto
+  --color-text-emphasis: #dedede; // Color para énfasis
+  --color-text-title: #f6f6f6; // Color para títulos
+  color: var(--color-text-base);
+
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1200,20,1.25,7,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --step--5: clamp(0.4019rem, 0.3991rem + 0.014vw, 0.4096rem);
+  --step--4: clamp(0.4823rem, 0.4714rem + 0.0541vw, 0.512rem);
+  --step--3: clamp(0.5787rem, 0.5564rem + 0.1114vw, 0.64rem);
+  --step--2: clamp(0.6944rem, 0.6561rem + 0.1919vw, 0.8rem);
+  --step--1: clamp(0.8333rem, 0.7727rem + 0.303vw, 1rem);
+  --step-0: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0682rem + 0.6591vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2534rem + 0.933vw, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.4686rem + 1.2971vw, 2.4414rem);
+  --step-4: clamp(2.0736rem, 1.7179rem + 1.7785vw, 3.0518rem);
+  --step-5: clamp(2.4883rem, 2.006rem + 2.4116vw, 3.8147rem);
+  --step-6: clamp(2.986rem, 2.3378rem + 3.2407vw, 4.7684rem);
+  --step-7: clamp(3.5832rem, 2.7187rem + 4.3223vw, 5.9605rem);
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: "Lato", sans-serif;
+  &::before {
+    content: "";
+    position: fixed;
+    background-image: url(https://assets.bwbx.io/images/users/i4YKw4LYfAGo/iPWWg_pbdYHU/v1/-1x-1.jpg);
+    width: 100dvw;
+    height: 100dvh;
+    filter: opacity(20%) grayscale(100%);
+  }
+}
+
+.container{
+  width: min(90dvw, 1320px);
+  margin: auto;
+}

@@ -1,1 +1,73 @@
-main
+<div class="profile">
+  <div class="profile__info">
+    <h1 class="profile__title">Hello, I'm Cristian Motta</h1>
+
+    <p class="profile__description">
+      <strong class="profile__role"> Software Engineer </strong>
+      <span class="profile__summary">
+        Engineer with over six years of experience in web
+        development, specializing in Angular. Skilled in building enterprise
+        solutions and passionate about creating software that simplifies
+        people's lives.
+      </span>
+    </p>
+  </div>
+
+  <div class="profile__skills">
+    <ul class="skills-list">
+      <ng-template #skillsList>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/angular.svg"
+            alt="Angular Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/nodejs.svg"
+            alt="Nodejs Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/material.png"
+            alt="Nodejs Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/rxjs.png"
+            alt="Nodejs Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/tailwind.png"
+            alt="Nodejs Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/git.png"
+            alt="Nodejs Logo"
+          />
+        </li>
+        <li class="skills-list__item">
+          <img
+            class="skills-list__icon"
+            src="assets/logos/firebase.png"
+            alt="Nodejs Logo"
+          />
+        </li>
+      </ng-template>
+      <ng-container *ngTemplateOutlet="skillsList"></ng-container>
+      <ng-container *ngTemplateOutlet="skillsList"></ng-container>
+    </ul>
+  </div>
+</div>

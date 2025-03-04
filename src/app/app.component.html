@@ -1,8 +1,6 @@
-<div class="flex h-screen font-serif">
-  <div class="hidden lg:block  w-1/5 bg-gray-100 p-2" style="min-width: 300px;">
-    <layout-side-bar></layout-side-bar>
-  </div>
-  <div class="w-full lg:w-4/5 overflow-auto p-2">
-    <layout-main-content></layout-main-content>
+<div class="content">
+  <layout-nav-bar></layout-nav-bar>
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
 </div>

@@ -3,11 +3,11 @@ import { faWhatsapp, faLinkedin, faGithub, IconDefinition } from "@fortawesome/f
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
-  selector: 'layout-side-bar',
-  templateUrl: './side-bar.component.html',
-  styleUrls: ['./side-bar.component.scss']
+  selector: 'layout-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.scss']
 })
-export class SideBarComponent {
+export class NavBarComponent {
   contactIcons: Array<{ icon: IconDefinition, link: string, text:string }> = [
     { icon: faPhone, link: 'tel:+573043676037', text:"+57 304 367 6037" },
     { icon: faEnvelope, link: 'mailto:cdmottah@gmail.com', text:" cdmottah@gmail.com" },
