@@ -1,25 +1,24 @@
 name: "Angular-ci"
-  on:
-    push:
-      branches: ["main"]
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: checkout
-          uses: actions/checkout@v3
-        - name: Setup Node.js environment
-          uses: actions/setup-node@v4.2.0
-          with:
-            node-version: "22.12.0"
-        - name: install dependencies
-          run: npm i
-        - name: build app
-          run: npm run build
-        - name: Deploy GitHub Pages site
-          uses: crazy-max/ghaction-github-pages@v4.1.0
-          with:
-            build_dir: "dist/hoja-de-vida"
-            env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: "22.12.0"
+      - name: install dependencies
+        run: npm i
+      - name: build app
+        run: npm run build
+      - name: Deploy GitHub Pages site
+        uses: crazy-max/ghaction-github-pages@v4.1.0
+        with:
+          build_dir: "dist/hoja-de-vida"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
