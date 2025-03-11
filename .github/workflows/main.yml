@@ -17,7 +17,7 @@ jobs:
       - name: build app
         run: npm run build
       - name: rename index for routing
-        run: mv dist/hoja-de-vida/index.html dist/hoja-de-vida/404.html
+        run: cp dist/hoja-de-vida/index.html dist/hoja-de-vida/404.html
       - name: Deploy GitHub Pages site
         uses: crazy-max/ghaction-github-pages@v4.1.0
         with:
