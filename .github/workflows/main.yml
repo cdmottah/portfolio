@@ -1,11 +1,11 @@
-name: Angular-ci
-  on: 
-    push: 
+name: "Angular-ci"
+  on:
+    push:
       branches: ["main"]
   jobs:
     build:
       runs-on: ubuntu-latest
-      steps: 
+      steps:
         - name: checkout
           uses: actions/checkout@v3
         - name: Setup Node.js environment
@@ -13,7 +13,7 @@ name: Angular-ci
           with:
             node-version: "22.12.0"
         - name: install dependencies
-          run: npm i 
+          run: npm i
         - name: build app
           run: npm run build
         - name: Deploy GitHub Pages site
@@ -22,4 +22,4 @@ name: Angular-ci
             build_dir: "dist/hoja-de-vida"
             env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
+

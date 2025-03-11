@@ -49,7 +49,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "https://github.com/cdmottah/portfolio.github.io/"
+              "baseHref": "/portfolio.github.io/"
             },
             "development": {
               "buildOptimizer": false,
