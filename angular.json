@@ -48,7 +48,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "https://github.com/cdmottah/portfolio.github.io/"
             },
             "development": {
               "buildOptimizer": false,
