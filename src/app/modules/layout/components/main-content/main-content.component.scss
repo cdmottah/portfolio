@@ -57,7 +57,7 @@ $text-title: var(--color-text-title);
 .skills-list__item {
   padding: 0.5em;
   border-radius: 0.5em;
-  background: hsla(0 0% 0% / 100%);
+  background: rgba(0, 0, 0, 0.812);
 }
 .skills-list__icon {
   --_size: var(--step-6);
@@ -65,6 +65,17 @@ $text-title: var(--color-text-title);
   height: var(--_size);
   object-fit: contain;
 }
+.section{
+  width: 100dvw;
+  font-size: var(--step-1);
+  padding-block: 1em;
+}
+.section--light{
+  background-color: hsla(0, 100%, 100%, 50%);
+  color: #171717;
+}
+
+
 
 @keyframes runSlider {
   from {
@@ -86,3 +97,5 @@ $text-title: var(--color-text-title);
     justify-content: center;
   }
 }
+
+

@@ -4,6 +4,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { ProyectsComponent } from './components/proyects/proyects.component';
 
 
 
@@ -11,6 +12,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     NavBarComponent,
     MainContentComponent,
+    ProyectsComponent,
   ],
   imports: [
     CommonModule,

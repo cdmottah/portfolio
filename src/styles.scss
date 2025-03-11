@@ -39,7 +39,19 @@
   }
 }
 
-.container{
-  width: min(90dvw, 1320px);
-  margin: auto;
+.wrapper {
+  margin-inline: auto;
+  padding: 5px;
+}
+
+@media (orientation: landscape) {
+  .wrapper {
+    max-inline-size: 1320px;
+  }
+}
+
+@media (orientation: portrait) {
+  .wrapper {
+    max-inline-size: 1320px;
+  }
 }

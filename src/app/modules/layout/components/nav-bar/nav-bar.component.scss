@@ -2,8 +2,8 @@
   --_space: 0.8em;
   background-color: #2f2f2f;
   box-sizing: border-box;
-
-  position: fixed;
+  z-index: 10;
+  position: relative;
   width: 100dvw;
   padding: 1em;
 }
