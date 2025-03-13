@@ -49,7 +49,7 @@
                 }
               ],
               "outputHashing": "all",
-              "outputPath": "/portfolio/"
+              "baseHref": "/portfolio/"
             },
             "development": {
               "buildOptimizer": false,
