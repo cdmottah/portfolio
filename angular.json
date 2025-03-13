@@ -50,7 +50,7 @@
               ],
               "outputHashing": "all",
               "baseHref": "/portfolio/",
-              "outputPath": "/portfolio/"
+              "outputPath": "portfolio"
             },
             "development": {
               "buildOptimizer": false,
