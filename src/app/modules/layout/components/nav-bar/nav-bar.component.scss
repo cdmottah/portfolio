@@ -1,6 +1,6 @@
 .nav-bar {
   --_space: 0.8em;
-  background-color: #2f2f2f;
+  background-color: hsla(0deg 0% 18.43% / 40%);
   box-sizing: border-box;
   z-index: 10;
   position: relative;
@@ -19,7 +19,7 @@
   color: var(--color-text-base);
   text-decoration: none;
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: var(--color-text-emphasis);
   }
 }

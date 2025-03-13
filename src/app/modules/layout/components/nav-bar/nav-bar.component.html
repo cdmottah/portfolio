@@ -1,11 +1,25 @@
 <div class="nav-bar">
   <div class="wrapper nav-bar__container">
-    <a routerLink="/home" routerLinkActive="nav-bar__item--active" class="nav-bar__item">Home</a>
-    <a routerLink="/proyects" routerLinkActive="nav-bar__item--active" class="nav-bar__item">Proyects</a>
-    <a routerLink="/contact" routerLinkActive="nav-bar__item--active" class="nav-bar__item">Contact</a>
+    <a
+      (click)="scrollToSection('home')"
+      routerLinkActive="nav-bar__item--active"
+      class="nav-bar__item"
+      >Home</a
+    >
+    <a
+      (click)="scrollToSection('proyects')"
+      routerLinkActive="nav-bar__item--active"
+      class="nav-bar__item"
+      >Proyects</a
+    >
+    <a
+      (click)="scrollToSection('contact')"
+      routerLinkActive="nav-bar__item--active"
+      class="nav-bar__item"
+      >Contact</a
+    >
   </div>
 </div>
-
 <!--
 
   <a *ngFor="let icon of contactIcons" [href]="icon.link">

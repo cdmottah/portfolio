@@ -1,12 +1,17 @@
-.content {
+.page-container {
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-rows: min-content 0px 1fr;
+  grid-template-rows: min-content  1fr;
   height: 100dvh;
   overflow: hidden;
 }
 
 .nav-bar{
   height: min-content;
+}
+
+.content{
+  overflow-x: hidden;
+  overflow-y: auto;
 }

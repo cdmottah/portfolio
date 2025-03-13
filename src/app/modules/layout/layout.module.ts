@@ -5,6 +5,7 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { ProyectsComponent } from './components/proyects/proyects.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -13,6 +14,7 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
     NavBarComponent,
     MainContentComponent,
     ProyectsComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,
