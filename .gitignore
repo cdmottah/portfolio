@@ -2,6 +2,7 @@
 
 # Compiled output
 /dist
+/portfolio
 /tmp
 /out-tsc
 /bazel-out
