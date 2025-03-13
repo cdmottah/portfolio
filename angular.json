@@ -50,7 +50,7 @@
               ],
               "outputHashing": "all",
               "baseHref": "/portfolio/",
-              "outputPath": "dist/hoja-de-vida"
+              "outputPath": "/portfolio/"
             },
             "development": {
               "buildOptimizer": false,
